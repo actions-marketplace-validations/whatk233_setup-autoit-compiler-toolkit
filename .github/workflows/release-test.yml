@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup Autoit Compiler Toolkit
-        uses: whatk233/setup-autoit-compiler-toolkit@v0.2
+        uses: whatk233/setup-autoit-compiler-toolkit@main
       - name: Compiler test script
         run: '%AUTOIT_COMPILER_TOOLKIT%\SciTe\AutoIt3Wrapper\AutoIt3Wrapper.exe /NoStatus /prod /in test.au3'
         shell: cmd
