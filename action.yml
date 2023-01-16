@@ -1,5 +1,5 @@
-name: Install Autoit Compiler Toolkit
-description: 'Windows Install Autoit,Aut2Exe,SciTe(only Au3Stripper,AutoIt3Wrapper,Tidy)'
+name: Setup Autoit Compiler Toolkit
+description: 'Windows setup "Autoit Compiler Toolkit"'
 branding: 
   icon: 'package'
   color: 'blue'
