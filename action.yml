@@ -1,0 +1,12 @@
+name: Install Autoit Compiler Toolkit
+description: 'Windows Install Autoit,Aut2Exe,SciTe(only Au3Stripper,AutoIt3Wrapper,Tidy)'
+branding: 
+  icon: 'package'
+  color: 'blue'
+
+runs:
+  using: "composite"
+  steps:
+    - name: Install Dependencies (Windows)
+      run: ${{ github.action_path }}/install.ps1
+      shell: pwsh
