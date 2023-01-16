@@ -4,7 +4,5 @@ $Toolkit_Path="$env:APPDATA\autoit_compiler_toolkit"
 
 Invoke-WebRequest -URI $Toolkit_Download_Url -OutFile $Toolkit_Download_Path
 Expand-Archive -Path $Toolkit_Download_Path -DestinationPath $Toolkit_Path -Force
-
 Remove-Item -Path $Toolkit_Download_Path -Force
-
-[environment]::SetEnvironmentvariable("AUTOIT_COMPILER_TOOLKIT", "$Toolkit_Path", "Machine")
+Write-Output "AUTOIT_COMPILER_TOOLKIT=$env:APPDATA\autoit_compiler_toolkit" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append

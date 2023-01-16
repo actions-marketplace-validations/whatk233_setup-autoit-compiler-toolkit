@@ -1,12 +1,12 @@
 name: Setup Autoit Compiler Toolkit
 description: 'Windows setup "Autoit Compiler Toolkit"'
-branding: 
-  icon: 'package'
-  color: 'blue'
+branding:
+  icon: "package"
+  color: "blue"
 
 runs:
   using: "composite"
   steps:
-    - name: Install Dependencies (Windows)
+    - name: Install Compiler Toolkit
       run: ${{ github.action_path }}/install.ps1
       shell: pwsh
